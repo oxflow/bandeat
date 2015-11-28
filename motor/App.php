@@ -19,7 +19,6 @@ abstract class			App
 		$this->link = new Link($this);
 		$this->link->setBasePath('/');
 		$this->link->setRoutes('frontend', '/');
-		$this->link->setRoutes('backend', '/admin/');
 		Session::init();
 	}
 

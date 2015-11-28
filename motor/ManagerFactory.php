@@ -11,7 +11,7 @@ class					ManagerFactory
 	{
 		try
 		{
-			$this->dao = new \PDO('mysql:host=localhost:3306;dbname=framework0', 'root', '123456');
+			$this->dao = new \PDO('mysql:host=localhost:3306;dbname=bandeat', 'root', '123456');
 			$this->dao->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 			$this->dao->exec("SET CHARACTER SET UTF8");
 		}

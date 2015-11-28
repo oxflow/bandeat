@@ -22,9 +22,6 @@ $load->register();
 $load = new Autoloader('Frontend', FRONTEND);
 $load->register();
 
-$load = new Autoloader('Backend', BACKEND);
-$load->register();
-
 $className = $_GET['app'] . '\\' . $_GET['app'] . 'Application';
 $app = new $className();
 $app->run();

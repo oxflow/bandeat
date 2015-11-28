@@ -5,8 +5,6 @@ use Lib\Session;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="author" content="Franck David">
-		<meta name="description" content="Framework0 Project">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="<?php echo $layout_bootstrap_css; ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo $layout_style; ?>">
@@ -14,9 +12,9 @@ use Lib\Session;
 		<script src="<?php echo $layout_bootstrap_js; ?>"></script>
 		<?php
 		if (isset($layout_title))
-			echo '<title>Framework 0 - ' . $layout_title . '</title>' . PHP_EOL;
+			echo '<title>Band\'eat - ' . $layout_title . '</title>' . PHP_EOL;
 		else
-			echo '<title>Framework 0</title>' . PHP_EOL;
+			echo '<title>Band\'eat</title>' . PHP_EOL;
 		?>
 	</head>
 	<body>
@@ -73,7 +71,7 @@ use Lib\Session;
 		</nav>
 		<?php echo $content_layout; ?>
 		<div class="foot">
-			<p>Copyright &copy; 2015 Franck David.</p>
+			<p>Copyright &copy; 2015 <a href="#">www.bandeat.com</a></p>
 		</div>
 	</body>
 </html>
