@@ -1,0 +1,6 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^admin.* web/app.php?app=Backend
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.* web/app.php?app=Frontend
