@@ -1,0 +1,16 @@
+<?php
+
+if (!isset($argc) OR !isset($argv) OR $argc < 2)
+	exit(0);
+
+define('DIR', dirname(dirname(__FILE__)));
+
+require_once(LIB . DS . 'Kernel.php');
+
+use Lib\Kernel,
+	Lib\Console\Command,
+	Lib\Console\Console;
+
+$kernel = new Kernel();
+$console = $kernel->getConsole();
+$console->run();

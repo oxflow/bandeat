@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<routes>
+  <route url="manage-users/user-[i:id]" controller="Admin" action="users" />
+  <route url="manage-users" controller="Admin" action="users" method="GET/POST" />
+  <route url="delete-user" controller="Admin" action="deleteUser" method="POST" />
+  <route url="delete-user/[i:id]" controller="Admin" action="deleteUser" method="POST" />
+</routes>
