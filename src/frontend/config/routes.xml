@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <routes>
-  <route url="" controller="Home" action="index" />
+	<route url="" controller="Home" action="index" />
+	<route url="commander" controller="Home" action="commander" method="GET/POST" />
 </routes>

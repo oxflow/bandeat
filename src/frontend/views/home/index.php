@@ -1,32 +1,23 @@
-<?php
-if (isset($articles))
-{
-	$users = array();
-	foreach ($articles as $article)
-	{
-		$id = $article->author();
-		$content = $article->content();
-		$url = $link->getUrl('Blog', 'read', array('id' => $article->id()));
-		if (strlen($content) > 500)
-		{
-			$content = trim(substr($content, 0, 500));
-			$content .= '...';
-		}
-		if (!isset($users[$id]))
-			$users[$id] = $userManager->getUser($id);
-		?>
-		<div class="container">
-			<div class="jumbotron">
-				<h2><a href="<?php echo $url; ?>"><?php echo $article->title(); ?></a></h2>
-				<h4>
-					<em>Posted on <?php echo $article->timestamp(); ?> by <?php echo $users[$id]->login(); ?></em>
-				</h4>
-				<p>
-					<?php echo $content; ?>
-				</p>
+<div class="container">
+	<div class="jumbotron">
+		<h2>Passer une commande</h2>
+		<form method="post" action="/commander">
+			<div class="form-group">
+				<label for="nom">Nom : </label><input type="text" class="form-control" id="nom" name="nom">
 			</div>
-		</div>
-		<?php
-	}
-}
-?>
+			<div class="form-group">
+				<label for="restaurant">Nom du restaurant : </label><input type="text" class="form-control" id="restaurant" name="restaurant">
+			</div>
+			<div class="form-group">
+				<label for="adresse">Adresse : </label><input type="text" id="adresse" class="form-control" name="adresse">
+			</div>
+			<div class="form-group">
+				<label for="email">E-mail : </label><input type="email" id="email" class="form-control" name="email">
+			</div>
+			<div class="form-group">
+				<label for="tel">T&eacute;l&eacute;phone : </label><input type="text" class="form-control" id="tel" name="tel">
+			</div>
+			<button type="submit" class="btn btn-default">Passer &agrave; l'&eacute;tape suivante</button>
+		</form>
+	</div>
+</div>
