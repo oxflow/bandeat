@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<routes>
-  <route url="pouet/[i:machin]" controller="Main" action="index" />
-  <route url=".*" name="machin" controller="Main" action="index" />
-</routes>
